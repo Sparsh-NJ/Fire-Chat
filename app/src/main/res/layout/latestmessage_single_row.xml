@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/LatestMessageImage"
+        android:src="@drawable/grey"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/user_display_image"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:layout_toRightOf="@+id/LatestMessageImage"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/LatestMessageName"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/LatestMessageImage"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latest_message"
+        android:textStyle="bold"
+        android:id="@+id/LatestMessage_latest_text"
+        android:layout_below="@+id/LatestMessageName"
+        android:layout_toRightOf="@id/LatestMessageImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/LatestMessageImage"
+        android:layout_marginStart="20dp" />
+
+</RelativeLayout>

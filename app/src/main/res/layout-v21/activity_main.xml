@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imgChatLogo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:background="@drawable/add_photo_circle"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Profile Image"
+        android:layout_below="@id/imgChatLogo"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imgChatLogo"
+        android:hint="Username"
+        android:textCursorDrawable="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:id="@+id/username"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_text_login" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/username"
+        android:hint="@string/email"
+        android:layout_marginTop="10dp"
+        android:textCursorDrawable="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:id="@+id/Email"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_text_login" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Email"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:textCursorDrawable="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_text_login"
+        android:id="@+id/password"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edit_text_login"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/Register"
+        android:textSize="11sp"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a user?"
+        android:layout_below="@+id/Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/Login"/>
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="160dp"
+       android:layout_height="160dp"
+       android:layout_marginTop="30dp"
+       app:civ_border_width="4dp"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/cropImage"/>
+
+
+</RelativeLayout>

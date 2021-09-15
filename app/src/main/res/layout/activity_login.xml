@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/black_panther"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgChatLogo"
+        android:contentDescription="@string/chat_app_logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imgChatLogo"
+        android:layout_marginTop="30dp"
+        android:hint="@string/email"
+        android:textCursorDrawable="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:id="@+id/loginUsername"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_text_login"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textCursorDrawable="@color/black"
+        android:layout_below="@+id/loginUsername"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/loginPassword"
+        android:background="@drawable/rounded_edit_text_login"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        android:id="@+id/btnLogin"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edit_text_login"/>
+
+</RelativeLayout>

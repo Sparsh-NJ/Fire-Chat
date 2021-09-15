@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imgChatLogo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:background="@drawable/add_photo_circle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imgChatLogo"
+        android:layout_marginTop="30dp"
+        android:hint="@string/username"
+        android:textColorHint="@color/black"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:id="@+id/username"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_text_login"
+       />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/username"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+     android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:background="@drawable/rounded_edit_text_login"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        android:id="@+id/Register"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edit_text_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_below="@+id/Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:id="@+id/forgotPassword"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        android:layout_below="@+id/forgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:id="@+id/Login"/>
+
+
+</RelativeLayout>

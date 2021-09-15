@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FirebaseChatApp</string>
+    <string name="don_t_have_an_account_register_now">don\'t have an account?Register now!</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="chat_app_logo">Chat App Logo</string>
+    <string name="username">Username</string>
+    <string name="already_a_user">ALready a user?</string>
+    <string name="register">Register</string>
+    <string name="user">already a user?</string>
+    <string name="email">Email</string>
+    <string name="user_display_image">User Display Image</string>
+    <string name="user_name">User name</string>
+    <string name="send">Send</string>
+    <string name="enter_message">Enter message</string>
+    <string name="name">Name</string>
+    <string name="latest_message">Latest Message</string>
+</resources>
